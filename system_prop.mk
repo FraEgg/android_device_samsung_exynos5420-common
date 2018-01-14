@@ -26,3 +26,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true
+
+# AptXHD
+ persist.bt.enableAptXHD=true
