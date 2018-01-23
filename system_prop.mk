@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=30
+	persist.bt.enableAptXHD=true
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \

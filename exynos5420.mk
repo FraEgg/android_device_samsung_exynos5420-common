@@ -33,6 +33,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(COMMON_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
+	
+# aptX HD BT Support
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/overlay/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
+	$(COMMON_PATH)/overlay/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so \
+	$(COMMON_PATH)/overlay/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so	
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
