@@ -29,3 +29,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # AptXHD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enableAptXHD=true
+
+

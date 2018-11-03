@@ -177,10 +177,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable multi-window by default
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.debug.multi_window=true
-	
-# Deathly Adiutor App
-PRODUCT_PACKAGES += \
-    DeathlyAdiutor
 
 # Legacy stagefright media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -190,6 +186,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # __popcountsi2 method, for the r7p0 egl blob
 PRODUCT_PACKAGES += \
     libpopcountsi2
+
+# call the common proprietary setup
+$(call inherit-product, vendor/samsung/exynos5420-common/exynos5420-common-vendor.mk)
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
